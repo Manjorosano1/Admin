@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+.row {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.row1 { 
+    display: flex;
+    justify-content: flex-end; 
+    gap: 20px;
+}
+
+.flex-item, .flex-item1, .flex-item2, .flex-item3, .flex-item4, .flex-item5 {
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around; 
+    gap: 20px;
+}
+
+.flex-item {
+    background-image: url(./8.jpg);
+}
+
+.flex-item1 {
+    background-image: url(./5.jpg);
+}
+
+.flex-item2 {
+    background-image: url(./9.jpg);
+}
+
+.flex-item3 {
+    background-image: url(./6.jpg);
+}
+
+.flex-item4 {
+    background-image: url(./pr1.jpg);
+}
+
+.flex-item5 {
+    background-image: url(./pr3.jpg);
+}

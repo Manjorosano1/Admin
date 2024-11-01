@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Middle of Text</title>
+    <style>
+        .hide-middle {
+            position: relative;
+            display: inline-block;
+        }
+
+        .hide-middle::before {
+            content: attr(data-before);
+            position: absolute;
+            left: 0;
+            right: 0;
+            background: white;
+            z-index: 1;
+            overflow: hidden;
+            white-space: nowrap;
+            display: block;
+            width: 50%;
+            mask: linear-gradient(to right, transparent, black 50%, black 50%, transparent);
+        }
+
+        .hide-middle span {
+            background: white;
+            display: block;
+            width: 50%;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <p class="hide-middle">
+        <span>Bu so'z o'rtasi</span>
+        <span data-before="Bu "></span>
+    </p>
+</body>
+</html>

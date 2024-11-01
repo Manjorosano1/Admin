@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O'quvchilar Jurnali</title>
+    <link rel="stylesheet" href="./sectet.project.css">
+</head>
+<body>
+    <div class="container">
+        <h1>O'quvchilar Jurnali</h1>
+
+        <form id="studentForm">
+            <label for="name">Ismi:</label>
+            <input type="text" id="name" required>
+            <label for="surname">Familiyasi:</label>
+            <input type="text" id="surname" required>
+            <label for="age">Yoshi:</label>
+            <input type="number" id="age" required>
+            <label for="year">Tug'ilgan yili:</label>
+            <input type="number" id="year" required>
+            <label for="phone">Telefon:</label>
+            <input type="text" id="phone" required>
+            <button type="submit">O'quvchini Qo'shish</button>
+        </form>
+
+        <button id="showStudentsBtn" onclick="window.location.href='student-list.html'">O'quvchilar Ro'yxati</button>
+        <button id="showSearchBtn" onclick="window.location.href='search.html'">O'quvchini Qidirish</button>
+    </div>
+
+    <script src="./sectetproject.js"></script>
+</body>
+</html>

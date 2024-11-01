@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            margin-bottom: 30px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="date"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="file"] {
+            display: block;
+            margin: 10px 0;
+        }
+
+        input[type="range"] {
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        h3 {
+            margin-top: 20px;
+        }
+
+        main {
+            margin-top: 40px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <form>
+            <label for="name">Name</label>
+            <input required id="name" type="text" placeholder="Enter name">
+
+            <label for="surname">Surname</label>
+            <input required id="surname" type="text" placeholder="Enter surname">
+
+            <label for="email">Email</label>
+            <input required type="email" id="email" placeholder="Enter your email">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password">
+
+            <label for="age">Age</label>
+            <input type="number" id="age" placeholder="Enter your age">
+
+            <label for="birthdate">Birth date</label>
+            <input type="date" id="birthdate">
+
+            <label for="where">Country</label>
+            <select id="where">
+                <option value="Uzbekistan">Uzbekistan</option>
+                <option value="Russia">Russia</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Arabia">Arabia</option>
+                <option value="USA">USA</option>
+                <option value="Spain">Spain</option>
+            </select>
+
+            <div>
+                <label>Gender</label>
+                <input name="gender" id="male" type="radio">
+                <label for="male">Male</label>
+                <input name="gender" id="female" type="radio">
+                <label for="female">Female</label>
+            </div>
+
+            <h3>File Upload</h3>
+            <input type="file" id="file">
+            <label for="file">Choose your photo</label>
+
+            <label for="experience">Your experience</label>
+            <input type="range" id="experience" name="experience" max="90">
+
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <main>
+            <h1>Map</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3034.1118034190918!2d68.7721808749528!3d40.49491067142709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38b207ac5e50942b%3A0xc672808b9c46d45a!2sIT%20LIVE%20ACADEMY!5e0!3m2!1sru!2s!4v1726060883690!5m2!1sru!2s" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </main>
+    </section>
+</body>
+</html>

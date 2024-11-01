@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #114582;
+        }
+
+        .table {
+            width: 80%;
+            margin: 20px auto;
+            border: 1px solid #116bf2;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #116bf2;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        th {
+            background-color: #109494;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #e9f3f5;
+        }
+
+        tr:hover {
+            background-color: #d0f0f9;
+            transition: background-color 0.3s ease;
+        }
+
+        .box {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        ul li, ol li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        ul li::marker {
+            color: #109494;
+        }
+
+        ol li::marker {
+            color: #116bf2;
+        }
+
+        /* Hover effect on list items */
+        ul li:hover, ol li:hover {
+            color: #114582;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Welcome to my Modern Web Page</h1>
+        <h2>Stylish Table Example</h2>
+    </section>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Apple</td>
+                <td>$1.00</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>$0.50</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Orange</td>
+                <td>$0.80</td>
+                <td>15</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="box">
+        <h3>Unordered List Example</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <h3>Ordered List Example</h3>
+        <ol>
+            <li>First step</li>
+            <li>Second step</li>
+            <li>Third step</li>
+        </ol>
+    </div>
+</body>
+</html>

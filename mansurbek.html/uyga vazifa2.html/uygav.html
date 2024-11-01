@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Products</title>
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .item {
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        text-align: left;
+        position: relative; /* Added to position the label */
+      }
+
+      .item img {
+        width: 200px;
+        height: 180px;
+        object-fit: cover;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .item h3 {
+        margin: 10px 0 5px 0;
+        font-size: 1.2em;
+        color: #333;
+      }
+
+      .item small {
+        color: blueviolet;
+        font-size: 1em;
+      }
+      .container1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        gap: 20px;
+      }
+
+      .container1 h1 {
+        margin: 0;
+      }
+
+      .container1 small {
+        color: #666;
+      }
+
+      .grid1 {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        background-color: #333;
+      }
+
+      .item1 img {
+        height: 180px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container1">
+      <h1>Our Products</h1>
+      <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, ea.</small>
+      <small>FIRST SECOND THIRD</small>
+    </div>
+
+    <div class="grid">
+      <div class="item">
+        <img src="../mansurbek6.html/1.jpg" alt="iPhone 11 Pro Max" />
+        <h3>iPhone 11 Pro Max</h3>
+        <small>$89.90</small>
+      </div>
+      <div class="item">
+        <img src="../mansurbek6.html/1.jpg" alt="Macbook Air" />
+        <h3>Macbook Air</h3>
+        <small>$199.90</small>
+      </div>
+      <div class="item">
+        <img src="../mansurbek6.html/1.jpg" alt="iPad Pro" />
+        <h3>iPad Pro</h3>
+        <small>$129.90</small>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.item1{grid-area: header;}
+.item2{grid-area: menu;}
+.item3{grid-area: main; min-height: 300px;}
+.item4{grid-area: right;}
+.item5{grid-area: footer;}
+
+.section {
+    display: grid;
+    grid-template-areas: 
+    'header header header header header'
+    'menu main main main main right'
+    'menu footer footer footer footer footer';
+}
+
+.section > div {
+    padding: 10px;
+    border-radius: 16px;
+    min-height: 100px;
+    background-color: rgba(36, 96, 137, 0.5);
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 240px;
+    font-weight: 700;
+}

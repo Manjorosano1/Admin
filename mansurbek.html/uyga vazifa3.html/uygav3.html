@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(https://images.unsplash.com/photo-1726293993561-ae9901d8c6d0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0; 
+            padding: 0; 
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            padding: 20px;
+        }
+        * {
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .box {
+            background-color: cadetblue;
+            color: white;
+            padding: 10px; 
+            width: 400px;
+            height: 80px;
+            border-radius: 12px;
+            box-shadow: 0px 7px 10px 4px rgba(32, 174, 100, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            overflow: hidden; 
+            position: relative;
+        }
+        .animation {
+            position: relative;
+            height: 100%; 
+        }
+        .animation h1 {
+            position: absolute;
+            position: fixed;
+            position: sticky;
+            position: relative;
+            position: static;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            animation: fadeInOut 9s infinite;
+        }
+        .animation h1:nth-child(1) {
+            animation-delay: 0s;
+        }
+        .animation h1:nth-child(2) {
+            animation-delay: 3s;
+        }
+        .animation h1:nth-child(3) {
+            animation-delay: 6s;
+        }
+        @keyframes fadeInOut {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            10%, 30% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            40% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        .button-44 {
+            background: #e62143;
+            border-radius: 11px;
+            color: #fff;
+            cursor: pointer;
+            display: flex;
+            font-size: 1.15em;
+            font-weight: 700;
+            justify-content: center;
+            padding: .8em 1em;
+            text-align: center;
+            transition: all .2s ease-in-out;
+            width: 100%;
+            border: 0;
+            margin-top: 20px;
+        }
+        .button-44:hover {
+            filter: brightness(0.9);
+        }
+        .box2 {
+            margin-top: 20px; 
+            padding: 15px; 
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 12px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .box2 h1 {
+            margin: 0; 
+        }
+
+        .box2 p::first-line {
+            color: red;
+            font-size: 2.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="animation">
+                <h1>Youtuber</h1>
+                <h1>Programmer</h1>
+                <h1>Designer</h1>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <button class="button-44" role="button">Button 44</button>
+    </div>
+
+    <div class="box2">
+        <h1>John Doe</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus commodi 
+            quos explicabo dolores soluta quaerat, accusantium, libero qui, minima fuga 
+            necessitatibus assumenda? Odio quod consequuntur sunt ipsam, magni amet doloremque!</p>
+    </div>
+</body>
+</html>

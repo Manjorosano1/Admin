@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Variations Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            border-bottom: 3px solid black;
+            background-color: white;
+        }
+
+        .menu-icon {
+            font-size: 30px;
+            color: #6c43ff;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style-type: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .auth-links a {
+            text-decoration: none;
+            color: #6c43ff;
+            margin-left: 20px;
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .auth-buttons button {
+            padding: 10px 20px;
+            font-weight: bold;
+            border: 2px solid #6c43ff;
+            border-radius: 5px;
+            background-color: white;
+            color: #6c43ff;
+            cursor: pointer;
+        }
+
+        .auth-buttons button.sign-up {
+            background-color: #6c43ff;
+            color: white;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-links img {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+
+        .cart {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 18px;
+        }
+
+        .search-icon {
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="menu-icon">&#8801;</div>
+        <div class="social-links">
+            <img src="./twitter.png" alt="Twitter">
+            <img src="./instagram.png" alt="Instagram">
+            <img src="./facebook.png" alt="Facebook">
+        </div>
+        <div class="auth-links">
+            <a href="#">SIGN IN</a>
+            <a href="#">SIGN UP</a>
+        </div>
+    </nav>
+
+    <nav class="navbar">
+        <div class="menu-icon">&#8801;</div>
+        <ul class="nav-links">
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">PRICING</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">BENEFITS</a></li>
+        </ul>
+        <div class="auth-links">
+            <a href="#">SIGN IN</a>
+            <a href="#">SIGN UP</a>
+        </div>
+    </nav>
+
+    <nav class="navbar">
+        <div class="menu-icon">&#8801;</div>
+        <ul class="nav-links">
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">PRICING</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">BENEFITS</a></li>
+        </ul>
+        <div class="cart">
+            <span>1</span>
+            <span class="cart-icon">&#128722;</span>
+            <span class="search-icon">&#128269;</span>
+        </div>
+    </nav>
+
+    <nav class="navbar">
+        <div class="menu-icon">&#8801;</div>
+        <ul class="nav-links">
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">PRICING</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">BENEFITS</a></li>
+        </ul>
+        <div class="auth-links">
+            <a href="#">SIGN IN</a>
+            <a href="#">SIGN UP</a>
+        </div>
+    </nav>
+
+    <nav class="navbar">
+        <div class="menu-icon">&#8801;</div>
+        <ul class="nav-links">
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">PRICING</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">BENEFITS</a></li>
+        </ul>
+        <div class="auth-links">
+            <span class="search-icon">&#128269;</span>
+            <a href="#">SIGN IN</a>
+            <a href="#">SIGN UP</a>
+        </div>
+    </nav>
+
+    <nav class="navbar">
+        <div class="menu-icon">&#8801;</div>
+        <ul class="nav-links">
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">PRICING</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">BENEFITS</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <button class="sign-in">Sign In</button>
+            <button class="sign-up">Sign Up</button>
+        </div>
+    </nav>
+
+    <nav class="navbar">
+        <div class="menu-icon">&#8801;</div>
+        <ul class="nav-links">
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">PRICING</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">BENEFITS</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <button class="sign-in">Sign In</button>
+            <button class="sign-up">Sign Up</button>
+        </div>
+    </nav>
+</body>
+</html>

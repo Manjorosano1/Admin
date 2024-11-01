@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statistics Section</title>
+  <style>
+    /* Base Container */
+    .statistics-container {
+      position: absolute;
+      width: 1400px;
+      height: 443px;
+      left: 0px;
+      top: 2591px;
+      background: #FFFFFF;
+    }
+
+    /* Rate */
+    .rate-section {
+      position: absolute;
+      width: 512px;
+      height: 150px;
+      left: 630px;
+      top: 193px;
+    }
+
+    /* Star Rating Section */
+    .stars {
+      position: absolute;
+      width: 135px;
+      height: 27px;
+      left: 62px;
+      top: 11px;
+      display: flex;
+    }
+
+    .star {
+      width: 27px;
+      height: 27px;
+      background: #6E38F7;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+
+    /* Rating Number */
+    .rating-number {
+      position: absolute;
+      height: 43px;
+      left: 0%;
+      right: 87.82%;
+      top: calc(50% - 43px/2 - 32px);
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 43px;
+      color: #6E38F7;
+    }
+
+    /* Customer Reviews Title */
+    .customers-reviews-title {
+      position: absolute;
+      height: 43px;
+      left: 38.11%;
+      right: 38.11%;
+      top: calc(50% - 43px/2 - 100px);
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 43px;
+      text-align: center;
+      color: #363940;
+    }
+
+    /* Bar Section */
+    .bar-container {
+      position: absolute;
+      left: 5.96%;
+      right: 17.89%;
+      top: 22.73%;
+      bottom: 22.73%;
+      display: flex;
+      align-items: center;
+    }
+
+    .bar {
+      width: 100%;
+      height: 22px;
+      background: #F6F7FA;
+      border-radius: 2px;
+      margin-right: 10px;
+    }
+
+    .bar-filled {
+      background: #95A1BB;
+      border-radius: 2px;
+      height: 100%;
+    }
+
+    /* Percentage and Reviews */
+    .review-stats {
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: #363940;
+      margin-right: 5px;
+    }
+
+    .review-percentage {
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: #95A1BB;
+    }
+  </style>
+</head>
+<body>
+
+<div class="statistics-container">
+  <div class="rate-section">
+    <div class="stars">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+    <div class="rating-number">4.7</div>
+    <div class="customers-reviews-title">Customers reviews</div>
+  </div>
+
+  <!-- Bar 1 -->
+  <div class="bar-container">
+    <div class="bar">
+      <div class="bar-filled" style="width: 46%;"></div>
+    </div>
+    <span class="review-percentage">46%</span>
+    <span class="review-stats">1315 reviews</span>
+  </div>
+
+  <!-- Bar 2 -->
+  <div class="bar-container">
+    <div class="bar">
+      <div class="bar-filled" style="width: 17%;"></div>
+    </div>
+    <span class="review-percentage">17%</span>
+    <span class="review-stats">205 reviews</span>
+  </div>
+
+  <!-- Bar 3 -->
+  <div class="bar-container">
+    <div class="bar">
+      <div class="bar-filled" style="width: 65%;"></div>
+    </div>
+    <span class="review-percentage">65%</span>
+    <span class="review-stats">982 reviews</span>
+  </div>
+
+</div>
+
+</body>
+</html>

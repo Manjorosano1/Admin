@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 10px;
+        }
+
+        .cards{
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            width: 250px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px black;
+            margin: 10px;
+        }
+        .card-image {
+            height: 170px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.6s ease;
+        }
+        .card-image:hover img{
+            transform: scale(1.5);
+        }
+
+        .content-body{
+            padding: 20px;
+
+        }
+        h2, p{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <div class="card">
+            <div class="card-image">
+                <img src="https://media.istockphoto.com/id/2165248271/photo/ball-made-of-glass-lies-on-a-stone-in-which-the-beach-and-the-sea-are-reflected.webp?a=1&b=1&s=612x612&w=0&k=20&c=WxGnxfZ9hIDc9Gvpsj4-l5JA29o7eH5o4lLWtnssoK4=" alt="image">
+            </div>
+
+            <div class="content-body">
+                <h2>Card title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, id.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="https://media.istockphoto.com/id/2165248271/photo/ball-made-of-glass-lies-on-a-stone-in-which-the-beach-and-the-sea-are-reflected.webp?a=1&b=1&s=612x612&w=0&k=20&c=WxGnxfZ9hIDc9Gvpsj4-l5JA29o7eH5o4lLWtnssoK4=" alt="image">
+            </div>
+
+            <div class="content-body">
+                <h2>Card title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, id.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="https://media.istockphoto.com/id/2165248271/photo/ball-made-of-glass-lies-on-a-stone-in-which-the-beach-and-the-sea-are-reflected.webp?a=1&b=1&s=612x612&w=0&k=20&c=WxGnxfZ9hIDc9Gvpsj4-l5JA29o7eH5o4lLWtnssoK4=" alt="image">
+            </div>
+
+            <div class="content-body">
+                <h2>Card title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, id.</p>
+            </div>
+</body>
+</html>

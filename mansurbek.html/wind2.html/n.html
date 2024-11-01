@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Amatic SC', sans-serif;
+            font-family: 'Fira Sans', sans-serif;
+            font-family: 'Hanken Grotesk', sans-serif;
+        }
+        .container {
+            max-width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            width: 690px;
+            height: 470px;
+            border-radius: 30px;
+            box-shadow: 11px 11px 19px 4px rgba(30, 77, 113, 0.2);
+            background-color: white;
+            display: flex;
+            gap: 15px;
+        }
+
+        .section-1 {
+            color: white;
+            text-align: center;
+            border-radius: 30px;
+            width: 50%;
+            padding: 30px 20px;
+            background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+            background-size: 130%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .section-2 {
+            color: black;
+            text-align: center;
+            border-radius: 30px;
+            width: 50%;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .result-box {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+        }
+        .your-result h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .result-number {
+            width: 200px;                          
+            height: 200px;                         
+            background-image: linear-gradient(hsl(252, 58%, 52%), hsl(241, 81%, 54%));
+            border-radius: 50%;                    
+            display: flex;
+            flex-direction: column;                
+            justify-content: center;              
+            align-items: center;
+            text-align: center;                  
+            color: white;   
+            font-size: 24px;
+        }
+        .result-number h1 {
+            font-size: 60px;
+            margin: 0;
+        }
+        .result-number span {
+            font-size: 20px;
+            color: lightgray;
+        }                                       
+        .result-comment h1 {
+            font-size: 36px;
+            margin: 20px 0;
+        }
+        .result-comment p {
+            font-size: 16px;
+            color: lightgray;
+        }
+        .summary {
+            margin-top: 20px;
+        }
+        .summary-item, .summary-item1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            margin: 10px 0;
+            font-size: 25px;
+            color: white;
+            padding: 10px;
+            border-radius: 8px; 
+        }
+        .summary-item {
+            background-color: rgb(241, 195, 199);
+        }
+        .summary-item1 {
+            background-color: rgb(171, 233, 143);
+        }
+        .icon {
+            width: 44px; 
+            height: 44px; 
+            margin-right: 10px; 
+        }
+        .continue-button {
+            width: 100%;
+            padding: 15px;
+            border-radius: 72px;
+            font-size: 20px;
+            cursor: pointer;
+            color: white;
+            background-color: hsl(241, 81%, 54%);
+            border: none; 
+            transition: background-color 0.3s; 
+        }
+        .continue-button:hover {
+            background-color: hsl(252, 100%, 67%); 
+        }
+
+        @media (max-width: 720px) {
+            .card {
+                flex-direction: column;
+                width: auto;
+                min-width: 290px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="section-1">
+                <div class="result-box">
+                    <div class="your-result">
+                        <h2>Your Result</h2>
+                    </div>
+                    <div class="result-number">
+                        <h1>76</h1>
+                        <span>of 100</span>
+                    </div>
+                    <div class="result-comment">
+                        <h1>Great</h1>
+                        <p>You scored higher than 65% of the people who have taken these tests.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-2">
+                <h1>Summary</h1>
+                <div class="summary">
+                    <div class="summary-item">
+                        <img src="https://front-end-mentor-io1.netlify.app/assets/images/icon-reaction.svg" alt="Reaction Icon" class="icon">
+                        <span>Reaction</span>
+                        <span>80 / 100</span>
+                    </div>
+                    <div class="summary-item">
+                        <img src="https://front-end-mentor-io1.netlify.app/assets/images/icon-memory.svg" alt="Memory Icon" class="icon">
+                        <span>Memory</span>
+                        <span>92 / 100</span>
+                    </div>
+                    <div class="summary-item1">
+                        <img src="https://front-end-mentor-io1.netlify.app/assets/images/icon-verbal.svg" alt="Verbal Icon" class="icon">
+                        <span>Verbal</span>
+                        <span>61 / 100</span>
+                    </div>
+                    <div class="summary-item1">
+                        <img src="https://front-end-mentor-io1.netlify.app/assets/images/icon-visual.svg" alt="Visual Icon" class="icon">
+                        <span>Visual</span>
+                        <span>72 / 100</span>
+                    </div>
+                </div>
+                <button class="continue-button">Continue</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

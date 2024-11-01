@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: auto;
+            justify-content: center;
+            gap: 20px;
+        }
+        .item {
+            background-color: rgb(255, 255, 255);
+            text-align: left;
+        }
+        .item img {
+            width: 940px;
+            height: 300px;
+            object-fit: cover;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Our team</h1>
+        <small>Failure will never overtake me if my determination to succeed is strong enough.</small>
+        <div class="grid">
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1729433321272-9243b22c5f6e?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8" alt="item">
+            </div>
+        </div>        
+    </div>
+</body>
+</html>

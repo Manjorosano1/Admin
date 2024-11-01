@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kundalik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Kundalik</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" id="home-link">Uyga vazifalar</a></li>
+                <li><a href="#" id="tasks-link">Baholar</a></li>
+                <li><a href="#" id="schedule-link">Jadval</a></li>
+                <li><a href="#" id="profile-link">Profil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="welcome">
+            <h2>Assalomu alaykum, O'quvchi!</h2>
+            <p>Bugungi darslaringiz va baholarni kuzatib boring.</p>
+        </section>
+
+        <section class="tasks" id="tasks-section">
+            <h3>Bugungi Uyga vazifalar</h3>
+            <div id="task-list"></div>
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="Yangi vazifa qo'shish..." required>
+                <button type="submit">Qo'shish</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kundalik.com. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

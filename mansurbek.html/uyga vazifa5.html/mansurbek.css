@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    color: black; 
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: black; 
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: black; 
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: white; 
+    border-radius: 10px;
+}
+
+.team-member img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.info h3 {
+    font-size: 18px;
+    color: black; 
+    margin-bottom: 5px;
+}
+
+.info small {
+    font-size: 14px;
+    color: black; 
+    margin-bottom: 10px;
+    display: block;
+}
+
+.info p {
+    font-size: 14px;
+    color: black; 
+}
+.info {
+    text-align: left; 
+    gap: 10px;
+}

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; /* Elementlarni gorizontal markazda joylashtirish */
+    gap: 20px; /* Har bir element orasida 20px bo'sh joy */
+    height: 100vx; /* Katta balandlikni beramiz */
+    padding: 20px; /* Konteyner ichiga qo'shimcha bo'sh joy berish */
+}

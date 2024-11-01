@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            max-width: 1400px;
+            height: 100vh;
+            margin: 0 auto;
+            display: flex;
+        }
+        .form{
+            width: 60%;
+            height: 100%;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img{
+            width: 50%;
+            height: 100%;
+            background-image: url(https://images.unsplash.com/photo-1729614140529-1d9a389403fe?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8);
+            background-size: cover;
+        }
+        form{
+            width: 430px;
+            min-width: 330px;
+            min-height:200px;
+            background-color: lightblue;
+        }
+        .input-1, .input-2 {
+            margin-top: 15px;
+            padding: 8px;
+            width: 100%;
+            margin: 10px 0;
+            border: rgba(118, 19, 218) 2px solid;
+            border-radius: 5px;
+            color: rgba(118, 19, 218);
+            font-size: 14px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .fa-facebook, .fa-twitter {
+            font-size: 34px;
+            color: rgba(118, 19, 218);
+        }
+        .fa-facebook, .fa-twitter:hover {
+            cursor: pointer;
+        }
+        input[type="text"] {
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            color: black;
+            font-size: 15px;
+            font-weight: 600;
+
+        }
+        input[type="text"]:focus{
+            outline: blueviolet;
+        }
+        input[type="text"]::placeholder{
+            color: rgba(118, 19, 218);
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <form action="">
+                <h1>Ragistration</h1>
+
+                <p style="color: #95A1BB; margin-top: 12px; margin-bottom: 12px;">Failure will never 
+                overtake me if my determination 
+                to succeed is strong enough. </p>
+
+                <div class="input-1">
+                    <div class="fa-brands fa-facebook"></div>
+                    <input type="text" placeholder="sing up via facebook">
+                </div>
+                <div class="input-2">
+                    <div class="fa-brands fa-twitter"></div>
+                    <input type="text" placeholder="sing up via facebook">
+                </div>
+            </form>
+        </div>
+
+        <div class="img">
+
+        </div>
+    </div>
+</body>
+</html>

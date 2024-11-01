@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Qatorlar qilib ajratish uchun */
+    align-items: center; /* Elementlarni vertikal markazga keltirish */
+    gap: 20px; /* Qatorlar orasiga bo‘shliq */
+}
+
+.row {
+    display: flex;
+    justify-content: center; /* Elementlarni gorizontal o'rtaga keltiradi */
+    gap: 20px; /* Elementlar orasiga bo‘shliq qo‘shadi */
+}
+
+.flex-item, .flex-item1, .flex-item2, .flex-item3, .flex-item4, .flex-item5 {
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.flex-item {
+    background-image: url(../mansurbek5.html/2.jpg);
+}
+
+.flex-item1 {
+    background-image: url(./5.jpg);
+}
+
+.flex-item2 {
+    background-image: url(./9.jpg);
+}
+
+.flex-item3 {
+    background-image: url(./6.jpg);
+}
+
+.flex-item4 {
+    background-image: url(./pr1.jpg);
+}
+
+.flex-item5 {
+    background-image: url(./pr3.jpg);
+}

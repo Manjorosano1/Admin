@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mansurbek Project</title>
+    <link rel="icon" type="image/x-icon" href="../3914417.png">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #333;
+            border-bottom: 4px solid #007BFF;
+            display: inline-block;
+            padding-bottom: 10px;
+            margin-bottom: 40px;
+        }
+
+        .table {
+            width: 350px;
+            border: 1px solid #007BFF;
+            border-radius: 10px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .table label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .table input[type="text"], 
+        .table input[type="email"], 
+        .table input[type="password"], 
+        .table input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .table input[type="submit"] {
+            width: 100%;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .table input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        hr {
+            margin: 50px 0;
+            border: none;
+            height: 1px;
+            background-color: #007BFF;
+            width: 80%;
+        }
+
+        .gallery {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .gallery h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .photo-table {
+            width: 100%;
+            border: none;
+            table-layout: fixed;
+        }
+
+        .photo-table td {
+            width: 150px;
+            height: 150px;
+            padding: 10px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .photo-table img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .video-container h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .video-container video {
+            width: 500px;
+            height: 300px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h1>Registration Form</h1> 
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <form>
+                            <label for="name">Name</label>
+                            <input required id="name" type="text" placeholder="Enter name">
+
+                            <label for="email">Email</label>
+                            <input required type="email" id="email" placeholder="Enter your email">
+
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="Enter your password">
+
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" id="confirm-password" placeholder="Confirm your password">
+
+                            <label for="file">Upload Profile Picture</label>
+                            <input type="file" id="file">
+
+                            <input type="submit" value="Register">
+                        </form>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+    </section>
+
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <table class="photo-table">
+            <tbody>
+                <tr>
+                    <td><img src="../3914417.png" alt="Photo 1"></td>
+                    <td><img src="../275b0c92d51ca214d96e13ad196db442.jpg" alt="Photo 2"></td>
+                    <td><img src="../PQqmw9alviQ.jpg" alt="Photo 3"></td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+    </section>
+
+    <section class="video-container">
+        <h2>Video</h2>
+        <video controls>
+            <source src="./mansurbek.MP4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video controls>
+            <source src="./video_2024-09-13_14-46-34.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <hr>
+    </section>
+</body>
+</html>
